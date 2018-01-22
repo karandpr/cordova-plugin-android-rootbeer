@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-android-rootbeer",
+  "version": "0.0.6",
+  "cordova": {
+    "id": "cordova-plugin-android-rootbeer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "root",
+    "android",
+    "rootbeer",
+    "rooted",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "description": "A wrapper plugin for rootbeer library. This library is used to detect root on Android Devices.",
+  "engines": {
+    "cordovaDependencies": {
+      "0.0.6": {"cordova-android": ">=4.0.0" }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karandpr/cordova-plugin-android-rootbeer"
+  },
+  "bugs": {
+    "url": "https://github.com/karandpr/cordova-plugin-android-rootbeer/issues"
+  },
+   "license" : "Apache-2.0",
+   "author": "Karan Gandhi"
+}
