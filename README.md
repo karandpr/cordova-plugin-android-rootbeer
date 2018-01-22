@@ -1,6 +1,8 @@
 # Cordova RootBeer
 
-This is a simple wrapper plugin for RootBeer library by @scottyab . You can access 12 functions of the library in cordova. This plugin is available for android only.
+This is a simple wrapper plugin for RootBeer library by @scottyab for android. You can access 13 functions of the library. 
+
+Link to Scott's <a href="https://github.com/scottyab/rootbeer">library </a>.
 
 ## Installation
 
@@ -96,3 +98,9 @@ window.cdvRootBeer.isRooted(function(res){
 ***
 
 <strong>isRootedWithoutBusyBoxCheck : </strong>Same as above , just without busybox check. Some phone manufacturers bundle busybox with their firmware.
+
+### Issues
+Post the issues related to this library <a href="https://github.com/karandpr/cordova-plugin-android-rootbeer/issues"> here </a>. Do provide the device details as below. 
+* Device name & manufacturer
+* Android version 
+* Custom OS version (Lineage , MIUI , Exodus, DU)
