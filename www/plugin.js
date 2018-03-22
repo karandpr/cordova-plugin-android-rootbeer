@@ -44,6 +44,9 @@ var cdvRootBeer = {
   },
   detectTestKeys: function (cb,err) {
     exec(cb, err, PLUGIN_NAME, 'detectTestKeys', []);
+  },
+  checkForMagiskBinary: function (cb,err) {
+    exec(cb, err, PLUGIN_NAME, 'checkForMagiskBinary', []);
   }
 };
 
