@@ -37,7 +37,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "isRootedWithoutBusyBoxCheck":
+        case "isRootedWithoutBusyBoxCheck":
         try {
           callbackContext.success(rootBeer.isRootedWithoutBusyBoxCheck() ? "true" : "false");
           Log.i(TAG, "Rooted without Busybox " + (rootBeer.isRootedWithoutBusyBoxCheck() ? "detected" : "not detected"));
@@ -46,7 +46,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "isSelinuxFlagInEnabled":
+        case "isSelinuxFlagInEnabled":
         try {
           callbackContext.success(Utils.isSelinuxFlagInEnabled() ? "true" : "false");
           Log.i(TAG, "SELinux Flag " + (Utils.isSelinuxFlagInEnabled() ? "Disabled" : "Enabled"));
@@ -55,7 +55,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "detectRootManagementApps":
+        case "detectRootManagementApps":
         try {
           callbackContext.success(rootBeer.detectRootManagementApps() ? "true" : "false");
           Log.i(TAG, "RootManagement Apps " + (rootBeer.detectRootManagementApps() ? "detected" : "not detected"));
@@ -64,7 +64,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "detectPotentiallyDangerousApps":
+        case "detectPotentiallyDangerousApps":
         try {
           callbackContext.success(rootBeer.detectPotentiallyDangerousApps() ? "true" : "false");
           Log.i(TAG, "Potentially Dangerous Apps " + (rootBeer.detectPotentiallyDangerousApps() ? "detected" : "not detected"));
@@ -73,7 +73,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "detectRootCloakingApps":
+        case "detectRootCloakingApps":
         try {
           callbackContext.success(rootBeer.detectRootCloakingApps() ? "true" : "false");
           Log.i(TAG, "Root cloaking apps " + (rootBeer.detectRootCloakingApps() ? "detected" : "not detected"));
@@ -82,7 +82,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkForBusyBoxBinary":
+        case "checkForBusyBoxBinary":
         try {
           callbackContext.success(rootBeer.checkForBusyBoxBinary() ? "true" : "false");
           Log.i(TAG, "Busybox Check " + (rootBeer.checkForBusyBoxBinary() ? "detected" : "not detected"));
@@ -91,7 +91,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkForSuBinary":
+        case "checkForSuBinary":
         try {
           callbackContext.success(rootBeer.checkForSuBinary() ? "true" : "false");
           Log.i(TAG, "SU Binary Check " + (rootBeer.checkForSuBinary() ? "detected" : "not detected"));
@@ -100,7 +100,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkSuExists":
+        case "checkSuExists":
         try {
           callbackContext.success(rootBeer.checkSuExists() ? "true" : "false");
           Log.i(TAG, "SU Binary Exists " + (rootBeer.checkSuExists() ? "detected" : "not detected"));
@@ -109,7 +109,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkForRWPaths":
+        case "checkForRWPaths":
         try {
           callbackContext.success(rootBeer.checkForRWPaths() ? "true" : "false");
           Log.i(TAG, "RW Paths " + (rootBeer.checkSuExists() ? "detected" : "not detected"));          
@@ -118,7 +118,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkForDangerousProps":
+        case "checkForDangerousProps":
         try {
           callbackContext.success(rootBeer.checkForDangerousProps() ? "true" : "false");
           Log.i(TAG, "Potentially Dangerous Props " + (rootBeer.checkForDangerousProps() ? "detected" : "not detected"));
@@ -127,7 +127,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkForRootNative":
+        case "checkForRootNative":
         try {
           callbackContext.success(rootBeer.checkForRootNative() ? "true" : "false");
           Log.i(TAG, "Native Root " + (rootBeer.checkForRootNative() ? "detected" : "not detected"));
@@ -136,7 +136,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "detectTestKeys":
+        case "detectTestKeys":
         try {
           callbackContext.success(rootBeer.detectTestKeys() ? "true" : "false");
           Log.i(TAG, "Detect Test Keys " + (rootBeer.detectTestKeys() ? "detected" : "not detected"));
@@ -145,7 +145,7 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-      case "checkForMagiskBinary":
+        case "checkForMagiskBinary":
         try {
           callbackContext.success(rootBeer.checkForMagiskBinary() ? "true" : "false");
           Log.i(TAG, "Magisk " + (rootBeer.checkForMagiskBinary() ? "detected" : "not detected"));
