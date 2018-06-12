@@ -145,8 +145,17 @@ public class cdvRootBeer extends CordovaPlugin {
           callbackContext.error("false");
         }
         break;
-        default:
-        callbackContext.error("false"); 
+        case "checkForMagiskBinary":
+        try {
+          callbackContext.success(rootBeer.checkForMagiskBinary() ? "true" : "false");
+          Log.i(TAG, "Magisk " + (rootBeer.checkForMagiskBinary() ? "detected" : "not detected"));
+        } catch (Exception e) {
+          Log.e(TAG, "Error" + e);
+          callbackContext.error("false");
+        }
+        break;
+      default:
+      callbackContext.error("false"); 
 
     }
     return true;
