@@ -1,4 +1,14 @@
-var exec = require('cordova/exec');
+let exec;
+try {
+  exec = require('cordova/exec');
+} catch (error) {
+  console.log('Cordova exec not found');
+  exec = function (cb, err, PLUGIN_NAME, RootCheck, args) {
+    console.log('Invoked RootCheck:' + RootCheck);
+    cb();
+  };
+}
+
 
 var PLUGIN_NAME = 'cdvRootBeer';
 
@@ -41,10 +51,7 @@ var cdvRootBeer = {
   },
   checkForRootNative: function (cb, err) {
     exec(cb, err, PLUGIN_NAME, 'checkForRootNative', []);
-  },
-  detectTestKeys: function (cb,err) {
-    exec(cb, err, PLUGIN_NAME, 'detectTestKeys', []);
-  },
+  }, 
   checkForMagiskBinary: function (cb,err) {
     exec(cb, err, PLUGIN_NAME, 'checkForMagiskBinary', []);
   }
