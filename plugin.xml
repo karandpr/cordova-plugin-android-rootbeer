@@ -2,8 +2,8 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-android-rootbeer"
-    version="0.0.6">
-    <name>RootBeer Library</name>
+    version="1.0.0">
+    <name>RootBeer Library for Cordova</name>
     <description></description>
     <license>MIT</license>
     <keywords></keywords>
