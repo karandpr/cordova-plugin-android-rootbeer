@@ -49,7 +49,8 @@ window.cdvRootBeer.isRooted(function(res){
 | isRootedWithoutBusyBoxCheck    | true  | false |
 
 ### Deprecated method post version 1.1.0
-
+| Methods                        | True  | False |
+| ------------------------------ | :---: | ----: |
 | isSelinuxFlagInEnabled         | true  | false |
 
 ## Method Description
