@@ -19,9 +19,6 @@ var cdvRootBeer = {
   isRootedWithoutBusyBoxCheck: function (cb, err) {
     exec(cb, err, PLUGIN_NAME, 'isRootedWithoutBusyBoxCheck', []);
   },
-  isSelinuxFlagInEnabled: function (cb, err) {
-    exec(cb, err, PLUGIN_NAME, 'isSelinuxFlagInEnabled', []);
-  },
   detectRootManagementApps: function (cb, err) {
     exec(cb, err, PLUGIN_NAME, 'detectRootManagementApps', []);
   },

@@ -14,7 +14,6 @@ import org.json.JSONException;
 
 import android.util.Log;
 import com.scottyab.rootbeer.RootBeer;
-import com.scottyab.rootbeer.util.Utils;
 import java.util.Date;
 
 public class cdvRootBeer extends CordovaPlugin {
@@ -45,16 +44,7 @@ public class cdvRootBeer extends CordovaPlugin {
           Log.e(TAG, "Error" + e);
           callbackContext.error("false");
         }
-        break;
-        case "isSelinuxFlagInEnabled":
-        try {
-          callbackContext.success(Utils.isSelinuxFlagInEnabled() ? "true" : "false");
-          Log.i(TAG, "SELinux Flag " + (Utils.isSelinuxFlagInEnabled() ? "Disabled" : "Enabled"));
-        } catch (Exception e) {
-          Log.e(TAG, "Error" + e);
-          callbackContext.error("false");
-        }
-        break;
+        break;      
         case "detectRootManagementApps":
         try {
           callbackContext.success(rootBeer.detectRootManagementApps() ? "true" : "false");

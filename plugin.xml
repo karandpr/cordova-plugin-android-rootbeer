@@ -2,9 +2,9 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-android-rootbeer"
-    version="1.0.0">
+    version="1.1.0">
     <name>RootBeer Library for Cordova</name>
-    <description></description>
+    <description>A wrapper plugin for rootbeer library. This library is used to detect root on Android Devices.</description>
     <license>MIT</license>
     <keywords></keywords>
     <!-- android -->

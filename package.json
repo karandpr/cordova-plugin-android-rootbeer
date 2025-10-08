@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-android-rootbeer",
-  "version": "0.0.8",
+  "version": "1.1.0",
   "cordova": {
     "id": "cordova-plugin-android-rootbeer",
     "platforms": [
@@ -19,7 +19,7 @@
   "description": "A wrapper plugin for rootbeer library. This library is used to detect root on Android Devices.",
   "engines": {
     "cordovaDependencies": {
-      "0.0.8": {"cordova-android": ">=4.0.0" }
+      "1.1.0": {"cordova-android": ">=4.0.0" }
     }
   },
   "repository": {

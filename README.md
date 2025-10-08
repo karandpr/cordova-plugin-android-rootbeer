@@ -45,9 +45,12 @@ window.cdvRootBeer.isRooted(function(res){
 | detectRootManagementApps       | true  | false |
 | detectPotentiallyDangerousApps | true  | false |
 | detectTestKeys                 | true  | false |
-| isSelinuxFlagInEnabled         | true  | false |
 | isRooted                       | true  | false |
 | isRootedWithoutBusyBoxCheck    | true  | false |
+
+### Deprecated method post version 1.1.0
+
+| isSelinuxFlagInEnabled         | true  | false |
 
 ## Method Description
 
